@@ -4,6 +4,8 @@ namespace Pastry.Store
 {
   class Cart
   {
+      private int breadCost = 5;
+      private int pastryCost = 2;
       private int _breadCart; 
       private int _pastryCart;
 
@@ -30,7 +32,7 @@ namespace Pastry.Store
       }
        public string GetCart()
       {
-          return "Bread Total: $" + _breadCart + " Pastry Total: $" + _pastryCart;
+          return "Bread Total: $" + _breadCart * breadCost + " Pastry Total: $" + _pastryCart * pastryCost;
       }
   }
 }
