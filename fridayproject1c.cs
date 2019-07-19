@@ -21,16 +21,16 @@ namespace Pastry.Store {
         int inputPastry = Convert.ToInt32(Console.ReadLine());
 
         //Menu Items
-        Bread = new Bread("Bread", 5);
+        Bread newBread = new Bread (inputBread, 5);
+        Pastry newPastry = new Pastry(inputPastry, 2);
 
-        Cart finalCart = new Cart(inputBread, inputPastry);
-        
 
-        Console.WriteLine(finalCart);
+        // Bread finalCart = new Bread(inputBread, inputPastry);
         
-        Console.WriteLine(finalCart.GetBreadCart());
-        Console.WriteLine(finalCart.GetPastryCart());
-        Console.WriteLine(finalCart.GetCart());
+        Console.WriteLine(breadCost * inputBread);
+        // Console.WriteLine(finalCart);
+        // Console.WriteLine(finalCart.GetCart());
+        // Console.WriteLine(DailyDeal());
        
     }
   }
