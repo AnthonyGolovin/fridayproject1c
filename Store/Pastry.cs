@@ -7,59 +7,33 @@ namespace Pastry.Store
 
   class Bread
   {
-      private string _breadItem; 
-      private int _breadCost { get; set; } 
+      public int breadItem { get; set; } 
+      public int breadCost { get; set; } 
       
-      public Bread(string breadItem, int breadCost)
+      public Bread(int breadItem, int breadCost)
       {
-          _breadItem = breadItem;
-          _breadCost = 5;
+          breadItem = breadItem;
+          breadCost = 5;
       }
-    //   public void
-    //   {
-
-    //   }
-    //    public void SetCost(int newCost)
-    //    {
-    //        breadCost = newCost;
-    //    }
+       public void Cost()
+       {
+           int dailyDeal = breadItem / 3;
+           int cost = (breadItem - dailyDeal) * 5;
+       }
   
   }
  //Pastry Store classes with item Attributes:
  class Pastry
   {
-      private string _pastryItem; 
-      private int _pastryCost { get; set; } 
+      public string pastryItem; 
+      public int pastryCost { get; set; } 
       
       public Pastry(string pastryItem, int pastryCost)
       {
-          _pastryItem = pastryItem;
-          _pastryCost = 2;
+          pastryItem = pastryItem;
+          pastryCost = 2;
       }
-    //    public Cart(string breadCost, string pastryCost, int inputBread, int inputPastry)
-    // {
-    //     _breadCost = 5;
-    //     _pastryCost = 2;
-    //     _inputBread = inputBread;
-    //     _inputPastry = _inputPastry;
-    //     return "Bread Total: $" + _breadItem * breadCost + " Pastry Total: $" + _pastryItem * pastryCost;
-    // }
 }
-//  class Cart
-//  {
-//       private string _breadItem; 
-//       private int _breadCost { get; set; } 
-//       private string _pastryItem; 
-//       private int _pastryCost { get; set; } 
 
-//     public Cart(string breadCost, string pastryCost, int inputBread, int inputPastry)
-//     {
-//         _breadCost = 5;
-//         _pastryCost = 2;
-//         _inputBread = inputBread;
-//         _inputPastry = _inputPastry;
-//         return "Bread Total: $" + _breadItem * breadCost + " Pastry Total: $" + _pastryItem * pastryCost;
-//     }
-//  }
 }
 
