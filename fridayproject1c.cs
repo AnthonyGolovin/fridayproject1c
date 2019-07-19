@@ -27,7 +27,9 @@ namespace Pastry.Store {
 
         // Bread finalCart = new Bread(inputBread, inputPastry);
         int CostEquation = inputBread * 5;
-        Console.WriteLine(" $" + CostEquation);
+        int DailyDeal = CostEquation / 3;
+        int Total = CostEquation - DailyDeal;       
+        Console.WriteLine(" $" + Total);
         
         // Console.WriteLine(finalCart);
         // Console.WriteLine(finalCart.GetCart());
