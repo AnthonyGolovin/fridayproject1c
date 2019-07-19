@@ -33,6 +33,11 @@ namespace Pastry.Store
           pastryItem = pastryItem;
           pastryCost = 2;
       }
+    //   public void Cost()
+    //    {
+    //        int dailyDeal = breadItem / 3;
+    //        int cost = (breadItem - dailyDeal) * 5;
+    //    }
 }
 
 }

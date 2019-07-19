@@ -22,14 +22,16 @@ namespace Pastry.Store {
 
         //Menu Items
         Bread bread = new Bread (inputBread, 5);
+        // Pastry 
 
 
-
-        // Bread finalCart = new Bread(inputBread, inputPastry);
+        // I added this here so that I can simply have the equation ready to move
         int CostEquation = inputBread * 5;
         int DailyDeal = CostEquation / 3;
         int Total = CostEquation - DailyDeal;       
         Console.WriteLine(" $" + Total);
+
+
         
         // Console.WriteLine(finalCart);
         // Console.WriteLine(finalCart.GetCart());
