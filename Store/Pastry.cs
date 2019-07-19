@@ -4,13 +4,26 @@ namespace Pastry.Store
 {
   class Cart
   {
-      private int _breadCart; 
-      private int _pastryCart;
+      private string _breadCart; 
+      private string _pastryCart;
 
-      public Cart(int breadCart, int pastryCart)
+      public Cart(string breadCart, string pastryCart)
       {
           _breadCart = breadCart;
           _pastryCart = pastryCart;
       }
+    //   public string GetBreadCart()
+    //   {
+    //       return _bread;
+    //   }
+    //   public string GetPastryCart()
+    //   {
+    //       return _pastry;
+    //   }
+    //   public string GetCart()
+    //   {
+    //       return " $" + _breadCart + " $" + _pastryCart;
+    //   }
+      
   }
 }

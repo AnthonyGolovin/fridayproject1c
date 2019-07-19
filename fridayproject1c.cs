@@ -15,12 +15,18 @@ namespace Pastry.Store {
         Console.WriteLine("Bread Price: $5 per loaf");
         Console.WriteLine("Pastry Price: $2 per Pastry");
         Console.WriteLine("Please input the amount of Bread you would like: (Number form ex. 1,2,3 ect.)");
-        Console.ReadLine();
+        string inputBread = (Console.ReadLine());
         Console.WriteLine("Please input the amount of Pastries you would like: (Number form ex. 1,2,3 ect.)");
-        Console.ReadLine();
+        string inputPastry = (Console.ReadLine());
 
-        Cart bread = new Cart("$", 5);
-        Cart pastry = new Cart("$", 2);
+
+
+        Cart finalCart = new Cart(inputBread, inputPastry);
+        // Cart pastry = new Cart(inputPastry);
+
+        Console.WriteLine(finalCart);
+        // Console.WriteLine(pastry);
+
     }
   }
 public class Pastry
