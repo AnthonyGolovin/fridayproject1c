@@ -18,6 +18,9 @@ namespace Pastry.Store {
         Console.ReadLine();
         Console.WriteLine("Please input the amount of Pastries you would like: (Number form ex. 1,2,3 ect.)");
         Console.ReadLine();
+
+        Cart bread = new Cart("$", 5);
+        Cart pastry = new Cart("$", 2);
     }
   }
 public class Pastry
