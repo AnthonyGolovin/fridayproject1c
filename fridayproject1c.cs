@@ -35,7 +35,7 @@ namespace Pastry.Store {
         
         // Console.WriteLine(finalCart);
         // Console.WriteLine(finalCart.GetCart());
-        // Console.WriteLine(DailyDeal());
+        // Console.WriteLine(DailyDeal(...));
        
     }
   }
