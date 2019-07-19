@@ -15,9 +15,9 @@ namespace Pastry.Store {
         Console.WriteLine("Bread Price: $5 per loaf");
         Console.WriteLine("Pastry Price: $2 per Pastry");
         Console.WriteLine("Please input the amount of Bread you would like: (Number form ex. 1,2,3 ect.)");
-        string inputBread = (Console.ReadLine());
+        int inputBread = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Please input the amount of Pastries you would like: (Number form ex. 1,2,3 ect.)");
-        string inputPastry = (Console.ReadLine());
+        int inputPastry = Convert.ToInt32(Console.ReadLine());
 
 
 
@@ -26,7 +26,9 @@ namespace Pastry.Store {
 
         Console.WriteLine(finalCart);
         // Console.WriteLine(pastry);
-
+        Console.WriteLine(finalCart.GetBreadCart());
+        Console.WriteLine(finalCart.GetPastryCart());
+        Console.WriteLine(finalCart.GetCart());
     }
   }
 public class Pastry
