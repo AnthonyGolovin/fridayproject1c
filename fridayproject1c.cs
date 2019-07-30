@@ -1,10 +1,10 @@
     
 using System;
 using System.Collections.Generic;
-using Pastry.Store;
+using The.Store;
 
-namespace Pastry.Store {
-
+namespace Menu
+{
   public class Store
   {
     public static void Main()
@@ -20,22 +20,18 @@ namespace Pastry.Store {
         Console.WriteLine("Please input the amount of Pastries you would like: (Number form ex. 1,2,3 ect.)");
         int inputPastry = Convert.ToInt32(Console.ReadLine());
 
-        //Menu Items
-        Bread bread = new Bread (inputBread, 5);
-        // Pastry 
-
-
-        // I added this here so that I can simply have the equation ready to move
-        int CostEquation = inputBread * 5;
-        int DailyDeal = CostEquation / 3;
-        int Total = CostEquation - DailyDeal;       
-        Console.WriteLine(" $" + Total);
-
-
+        //Bread Purchase
+        Bread bread = new Bread(inputBread, 5);
+        int remainder = inputBread / 3;
+        int breadTotal = (inputBread - remainder) * 5;
+        Console.WriteLine("The bread will cost $" + breadTotal);
         
-        // Console.WriteLine(finalCart);
-        // Console.WriteLine(finalCart.GetCart());
-        // Console.WriteLine(DailyDeal(...));
+        // Pastry 
+        Pastry pastry = new Pastry(inputPastry, 2);
+        int modulo = inputPastry % 3;
+        int dailyDeal = inputPastry / 3;
+        int pastryTotal = (2 * modulo) + (dailyDeal * 5);
+        Console.WriteLine("The pastry will cost $ " + pastryTotal);
        
     }
   }
