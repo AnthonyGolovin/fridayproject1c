@@ -8,20 +8,20 @@ namespace The.Store
   class Bread
   {
       public int BreadItem { get; set; } //Quantity
-      public int breadCost { get; set; } //Cost
-      public int totalBread { get; set; } //Total
+      public int BreadCost { get; set; } //Cost
+      public int TotalBread { get; set; } //Total
 
       public Bread(int breadItem, int breadCost)//Bread Constructor
       {
           BreadItem = breadItem;
-          breadCost = 5;
-          totalBread = breadAddUp();
+          BreadCost = 5;
+          TotalBread = breadAddUp();
       }
       public int breadAddUp() //Price calculator 
         {
            int remainder = BreadItem / 3;
-           int totalBread = (BreadItem - remainder) * breadCost;
-           return totalBread;
+           int TotalBread = (BreadItem - remainder) * BreadCost;
+           return TotalBread;
         } 
   
   }
@@ -29,24 +29,24 @@ namespace The.Store
  class Pastry
   {
       public int PastryItem { get; set; } //Quantity
-      public int pastryCost { get; set; } //Cost
-      public int totalPastry{ get; set; } //Total
-      public int pastryPromo{ get; set; } //Pastry Promotion
+      public int PastryCost { get; set; } //Cost
+      public int TotalPastry{ get; set; } //Total
+      public int PastryPromo{ get; set; } //Pastry Promotion
       
       public Pastry(int pastryItem, int pastryCost)//Pastry Constructor
       {
           PastryItem = pastryItem;
-          pastryCost = 2;
-          pastryPromo = 5;
-          totalPastry= pastryAddUp();
+          PastryCost = 2;
+          PastryPromo = 5;
+          TotalPastry= pastryAddUp();
       }
       
     public int pastryAddUp() //Price calculator 
         {
            int modulo = PastryItem % 3;
            int dailyDeal = PastryItem / 3;
-           int totalPastry = (pastryCost * modulo) + (dailyDeal * pastryPromo);
-           return totalPastry;
+           int TotalPastry = (PastryCost * modulo) + (dailyDeal * PastryPromo);
+           return TotalPastry;
         } 
 }
 

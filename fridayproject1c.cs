@@ -22,16 +22,19 @@ namespace Menu
 
         //Bread Purchase
         Bread bread = new Bread(inputBread, 5);
-        int remainder = inputBread / 3;
-        int breadTotal = (inputBread - remainder) * 5;
-        Console.WriteLine("The bread will cost $" + breadTotal);
+        Console.WriteLine(bread.BreadItem);
+
+        bread.breadAddUp();
+        // int remainder = inputBread / 3;
+        // int breadTotal = (inputBread - remainder) * 5;
+        Console.WriteLine("The bread will cost $" + bread.TotalBread);
         
         // Pastry 
         Pastry pastry = new Pastry(inputPastry, 2);
-        int modulo = inputPastry % 3;
-        int dailyDeal = inputPastry / 3;
-        int pastryTotal = (2 * modulo) + (dailyDeal * 5);
-        Console.WriteLine("The pastry will cost $ " + pastryTotal);
+        // int modulo = inputPastry % 3;
+        // int dailyDeal = inputPastry / 3;
+        // int pastryTotal = (2 * modulo) + (dailyDeal * 5);
+        Console.WriteLine("The pastry will cost $ " + pastry.TotalPastry);
        
     }
   }
